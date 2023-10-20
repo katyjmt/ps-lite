@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-10-17T21:32:52.673Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="pegySVVWlmm93XHhKJBk" version="21.7.5" type="device">
+  <diagram name="Page-1" id="2pIbgVz0KJ61SowLPMG9">
+    <mxGraphModel dx="1872" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hVuaewwp5bfZHh35y_4K-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hVuaewwp5bfZHh35y_4K-1" target="hVuaewwp5bfZHh35y_4K-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hVuaewwp5bfZHh35y_4K-1" target="hVuaewwp5bfZHh35y_4K-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-1" value="Users&lt;br&gt;&lt;br&gt;_id&lt;br&gt;first_name&lt;br&gt;last_name&lt;br&gt;email&lt;br&gt;password (encrypted)&lt;br&gt;is_admin&lt;br&gt;designs [array of objects]&lt;br&gt;date_created&lt;br&gt;date_modified&lt;br&gt;last_logged_in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="130" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hVuaewwp5bfZHh35y_4K-2" target="hVuaewwp5bfZHh35y_4K-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hVuaewwp5bfZHh35y_4K-2" target="hVuaewwp5bfZHh35y_4K-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-2" value="Designs&lt;br&gt;&lt;br&gt;_id&lt;br&gt;user_id (joined)&lt;br&gt;page_selection [array of page ids]&lt;br&gt;page_count&lt;br&gt;cover_type&lt;br&gt;price&lt;br&gt;orders [array of orders - can be multiple orders for the same design]&lt;br&gt;date_created" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-3" value="Orders&lt;br&gt;&lt;br&gt;_id&lt;br&gt;design_id (joined)&lt;br&gt;pdf_file&lt;br&gt;ship_cost&lt;br&gt;ship_address&lt;br&gt;ship_suburb&lt;br&gt;ship_postcode&lt;br&gt;ship_country&lt;br&gt;date_created&lt;br&gt;status" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="280" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-4" value="Session&lt;br&gt;&lt;br&gt;is_logged_in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="10" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-5" value="Pages&lt;br&gt;&lt;br&gt;_id&lt;br&gt;category_id&lt;br&gt;title&lt;br&gt;description&lt;br&gt;page_count&lt;br&gt;&amp;nbsp;pdf_file&lt;br&gt;jpg_file&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hVuaewwp5bfZHh35y_4K-6" target="hVuaewwp5bfZHh35y_4K-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hVuaewwp5bfZHh35y_4K-6" value="Page_Categories&lt;br&gt;&lt;br&gt;_id&lt;br&gt;category&lt;br&gt;description&lt;br&gt;pages [array of objects]&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="600" width="260" height="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
