@@ -7,6 +7,7 @@ require('dotenv').config();
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
+// Heroku will use process.env.PORT when deployed, otherwise use local port
 const PORT = process.env.PORT || 3001;
 const app = express();
 const apolloServer = new ApolloServer({
@@ -20,7 +21,7 @@ const startApolloServer = async () => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
   
-  app.use('/graphql', expressMiddleware(server));
+  app.use('/graphql', expressMiddleware(apolloServer));
 
   // If in production, serve client/dist as static assets
   if (process.env.NODE_ENV === 'production') {
