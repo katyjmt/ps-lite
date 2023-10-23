@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const Design = require('./Design');
 
 const userSchema = new Schema({
   first_name: {
@@ -25,11 +24,7 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-  },
-  designs: [{
-    type: Schema.Types.ObjectId, 
-    ref: 'Design'
-  }],
+  }
 }, { timestamps: true }
 );
 

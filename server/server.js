@@ -8,7 +8,7 @@ const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 // Heroku will use process.env.PORT when deployed, otherwise use local port
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3007;
 const app = express();
 const apolloServer = new ApolloServer({
   typeDefs,

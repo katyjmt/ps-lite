@@ -3,18 +3,14 @@ const Design = require('./Design');
 const User = require('./User');
 
 const designSchema = new Schema({
-  design: [{
-    type: Schema.Types.ObjectId, 
-    ref: 'Design'
-  }],
-  user: [{
+  user: {
     type: Schema.Types.ObjectId, 
     ref: 'User'
-  }],
-  pdf: {
-    type: String,
-    required: true,
-  }
+  },
+  designs: [{
+    type: Schema.Types.ObjectId, 
+    ref: 'Design'
+  }]
 }, 
 { timestamps: true }
 );

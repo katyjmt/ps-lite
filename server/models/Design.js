@@ -4,22 +4,18 @@ const Page = require('./Page');
 const Order = require('./Order')
 
 const designSchema = new Schema({
-  user: [{
+  user: {
     type: Schema.Types.ObjectId, 
     ref: 'User'
-  }],
-  page_selection: [{
+  },
+  pages: [{
     type: Schema.Types.ObjectId, 
     ref: 'Page'
   }],
-  cover_type: {
+  cover: {
     type: String,
     required: true,
-  },
-  orders: [{
-    type: Schema.Types.ObjectId, 
-    ref: 'Order'
-  }],
+  }
 }, 
 { timestamps: true },
 {
