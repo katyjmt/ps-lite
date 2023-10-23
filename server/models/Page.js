@@ -13,6 +13,10 @@ const pageSchema = new Schema({
   description: {
     type: String,
     required: true,
+  },
+  page_count: {
+    type: Number,
+    required: true,
   }
 }, 
 { timestamps: true }

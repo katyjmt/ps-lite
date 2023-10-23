@@ -23,21 +23,37 @@ db.once('open', async () => {
   const pages = await Page.insertMany(pageData);
   const categories = await Category.insertMany(categoryData);
 
-  // for (newClass of classes) {
-  //   // randomly add each class to a school
-  //   const tempSchool = schools[Math.floor(Math.random() * schools.length)];
-  //   tempSchool.classes.push(newClass._id);
-  //   await tempSchool.save();
+  for (newDesign of designs) {
+    // randomly add a user to each design
+    const tempUser = users[Math.floor(Math.random() * users.length)];
+    newDesign.user = tempUser._id;
+    await newDesign.save();
+  };
 
-  //   // randomly add a professor to each class
-  //   const tempProfessor = professors[Math.floor(Math.random() * professors.length)];
-  //   newClass.professor = tempProfessor._id;
-  //   await newClass.save();
+  for (newDesign of designs) {
+    // for each design, choose 5 random pages and add them to its pages array
+    for (let i = 0; i < 5; i++) {
+      const tempPage = pages[Math.floor(Math.random() * pages.length)];
+      newDesign.pages.push(tempPage._id);
+      await newDesign.save();
+    };
+  };
 
-  //   // reference class on professor model, too
-  //   tempProfessor.classes.push(newClass._id);
-  //   await tempProfessor.save();
-  // }
+  for (newOrder of orders) {
+    // randomly add a user to each order
+    const tempUser = users[Math.floor(Math.random() * users.length)];
+    newOrder.user = tempUser._id;
+    await newOrder.save();
+  };
+
+  for (newOrder of orders) {
+    // for each order, choose 2 random designs and add them to its pages array
+    for (let i = 0; i < 2; i++) {
+      const tempDesign = pages[Math.floor(Math.random() * designs.length)];
+      newOrder.pages.push(tempDesign._id);
+      await newOrder.save();
+    };
+  };
 
   console.log('all done!');
   process.exit(0);

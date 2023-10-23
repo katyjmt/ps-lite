@@ -1,12 +1,19 @@
 const { Schema, model } = require('mongoose');
 const User = require('./User');
 const Page = require('./Page');
-const Order = require('./Order')
 
 const designSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId, 
     ref: 'User'
+  },
+  start_month: {
+    type: Date,
+    required: true,
+  },
+  end_month: {
+    type: Date,
+    required: true,
   },
   pages: [{
     type: Schema.Types.ObjectId, 
