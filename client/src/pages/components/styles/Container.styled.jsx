@@ -1,0 +1,12 @@
+import styled from "styled-components"
+
+export const Container = styled.div`
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: ${( { fd }) => fd || 'column'};
+  justify-content: ${( { justify }) => justify || 'center'};
+  align-items: center;
+  height: ${( { vh }) => vh || 'auto'};
+`

@@ -1,23 +1,19 @@
 const { Schema, model } = require('mongoose');
-const Category = require('./Category');
 
 const pageSchema = new Schema({
   category: {
-    type: Schema.Types.ObjectId, 
-    ref: 'Category'
+    type: String,
   },
   name: {
     type: String,
     required: true,
   },
-  description: {
-    type: String,
-    required: true,
-  },
-  page_count: {
+  internal_id: {
     type: Number,
     required: true,
+    unique: true,
   }
+
 }, 
 { timestamps: true }
 );

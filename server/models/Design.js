@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
-const User = require('./User');
-const Page = require('./Page');
 
+// Design document is first created when cover, start month and end month have all been selected (required: true)
 const designSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId, 

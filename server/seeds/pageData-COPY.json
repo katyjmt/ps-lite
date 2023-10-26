@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Notes, To-Dos and Schedule",
+    "category": "daily",
+    "internal_id": 3
+  },
+  {
+    "name": "Full-Page Lined",
+    "category": "daily",
+    "internal_id": 4
+  },
+  {
+    "name": "Full-Page Schedule",
+    "category": "daily",
+    "internal_id": 24
+  },
+  {
+    "name": "Notes, Categorised Tasks & Appointments",
+    "category": "daily",
+    "internal_id": 60
+  },
+  {
+    "name": "Notes, Schedule, Tasks, Gratitude & Self-Care",
+    "category": "daily",
+    "internal_id": 61
+  },
+  {
+    "name": "Time-Blocking & Tasks",
+    "category": "weekly",
+    "internal_id": 6
+  },
+  {
+    "name": "Tasks, Goals & Habit-Tracking",
+    "category": "weekly",
+    "internal_id": 7
+  },
+  {
+    "name": "Days, Notes & To-Dos",
+    "category": "weekly",
+    "internal_id": 28
+  },
+  {
+    "name": "4-Page Goals, Habits, Reminders & Tasks",
+    "category": "weekly",
+    "internal_id": 37
+  },
+  {
+    "name": "Goals, Tasks & Self-Care",
+    "category": "weekly",
+    "internal_id": 40
+  },
+  {
+    "name": "Schedule, Goals, Self-Care, Tasks & Reminders",
+    "category": "weekly",
+    "internal_id": 44
+  },
+  {
+    "name": "Household Tracker & Notes",
+    "category": "weekly",
+    "internal_id": 59
+  },
+  {
+    "name": "Grid, Goals & Tasks",
+    "category": "monthly",
+    "internal_id": 34
+  },
+  {
+    "name": "Grid, Goals, To-Dos & Habits",
+    "category": "monthly",
+    "internal_id": 47
+  },
+  {
+    "name": "Grid & Notes",
+    "category": "monthly",
+    "internal_id": 48
+  },
+  {
+    "name": "Wide Grid & Notes",
+    "category": "monthly",
+    "internal_id": 100
+  },
+  {
+    "name": "Household Tracker",
+    "category": "monthly",
+    "internal_id": 57
+  },
+  {
+    "name": "Wide Grid & Tasks",
+    "category": "monthly",
+    "internal_id": 58
+  },
+  {
+    "name": "Calendar & Notes",
+    "category": "annual",
+    "internal_id": 30
+  },
+  {
+    "name": "Annual Overview",
+    "category": "annual",
+    "internal_id": 43
+  },
+  {
+    "name": "Year at a Glance",
+    "category": "annual",
+    "internal_id": 45
+  },
+  {
+    "name": "Annual Grid",
+    "category": "annual",
+    "internal_id": 49
+  },
+  {
+    "name": "Notes for the Year",
+    "category": "annual",
+    "internal_id": 82
+  }
+]

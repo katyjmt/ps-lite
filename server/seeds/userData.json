@@ -1,0 +1,62 @@
+[
+  {
+    "first_name": "Alice",
+    "last_name": "Johnson",
+    "email": "alice.johnson@example.com",
+    "password": "password123"
+  },
+  {
+    "first_name": "Bob",
+    "last_name": "Smith",
+    "email": "bob.smith@example.com",
+    "password": "password456"
+  },
+  {
+    "first_name": "Charlie",
+    "last_name": "Davis",
+    "email": "charlie.davis@example.com",
+    "password": "password789"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Wilson",
+    "email": "david.wilson@example.com",
+    "password": "passwordabc"
+  },
+  {
+    "first_name": "Eva",
+    "last_name": "Brown",
+    "email": "eva.brown@example.com",
+    "password": "passw0rd123"
+  },
+  {
+    "first_name": "Frank",
+    "last_name": "Lee",
+    "email": "frank.lee@example.com",
+    "password": "passw0rd456"
+  },
+  {
+    "first_name": "Grace",
+    "last_name": "Martinez",
+    "email": "grace.martinez@example.com",
+    "password": "passw0rd789"
+  },
+  {
+    "first_name": "Hannah",
+    "last_name": "Taylor",
+    "email": "hannah.taylor@example.com",
+    "password": "securepassword"
+  },
+  {
+    "first_name": "Isaac",
+    "last_name": "Harris",
+    "email": "isaac.harris@example.com",
+    "password": "strongpassword"
+  },
+  {
+    "first_name": "Jack",
+    "last_name": "Clark",
+    "email": "jack.clark@example.com",
+    "password": "myp@ssw0rd"
+  }
+]

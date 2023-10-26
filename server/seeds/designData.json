@@ -1,0 +1,102 @@
+[
+  {
+    "start_month": "2023-01-01",
+    "end_month": "2023-03-01",
+    "cover": "red"
+  },
+  {
+    "start_month": "2023-04-01",
+    "end_month": "2023-06-01",
+    "cover": "blue"
+  },
+  {
+    "start_month": "2023-07-01",
+    "end_month": "2023-09-01",
+    "cover": "green"
+  },
+  {
+    "start_month": "2023-10-01",
+    "end_month": "2024-01-01",
+    "cover": "yellow"
+  },
+  {
+    "start_month": "2024-02-01",
+    "end_month": "2024-05-01",
+    "cover": "orange"
+  },
+  {
+    "start_month": "2024-06-01",
+    "end_month": "2024-09-01",
+    "cover": "purple"
+  },
+  {
+    "start_month": "2024-10-01",
+    "end_month": "2025-02-01",
+    "cover": "pink"
+  },
+  {
+    "start_month": "2025-03-01",
+    "end_month": "2025-07-01",
+    "cover": "brown"
+  },
+  {
+    "start_month": "2025-08-01",
+    "end_month": "2025-12-01",
+    "cover": "gray"
+  },
+  {
+    "start_month": "2023-01-01",
+    "end_month": "2023-04-01",
+    "cover": "black"
+  },
+  {
+    "start_month": "2023-05-01",
+    "end_month": "2023-08-01",
+    "cover": "white"
+  },
+  {
+    "start_month": "2023-09-01",
+    "end_month": "2024-01-01",
+    "cover": "teal"
+  },
+  {
+    "start_month": "2024-02-01",
+    "end_month": "2024-06-01",
+    "cover": "cyan"
+  },
+  {
+    "start_month": "2024-07-01",
+    "end_month": "2024-12-01",
+    "cover": "magenta"
+  },
+  {
+    "start_month": "2025-01-01",
+    "end_month": "2025-05-01",
+    "cover": "lime"
+  },
+  {
+    "start_month": "2025-06-01",
+    "end_month": "2025-12-01",
+    "cover": "indigo"
+  },
+  {
+    "start_month": "2023-01-01",
+    "end_month": "2023-05-01",
+    "cover": "violet"
+  },
+  {
+    "start_month": "2023-06-01",
+    "end_month": "2023-12-01",
+    "cover": "gold"
+  },
+  {
+    "start_month": "2024-01-01",
+    "end_month": "2024-07-01",
+    "cover": "silver"
+  },
+  {
+    "start_month": "2024-08-01",
+    "end_month": "2025-02-01",
+    "cover": "bronze"
+  }
+]

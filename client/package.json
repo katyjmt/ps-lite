@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@apollo/server": "^4.9.4",
+    "dayjs": "^1.11.10",
     "graphql": "^16.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.16.0",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

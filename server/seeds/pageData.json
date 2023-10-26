@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Notes, To-Dos and Schedule",
+    "category": "daily",
+    "internal_id": 3
+  },
+  {
+    "name": "Full-Page Lined",
+    "category": "daily",
+    "internal_id": 4
+  },
+  {
+    "name": "Time-Blocking & Tasks",
+    "category": "weekly",
+    "internal_id": 6
+  },
+  {
+    "name": "Grid, Goals & Tasks",
+    "category": "monthly",
+    "internal_id": 34
+  },
+  {
+    "name": "Grid, Goals, To-Dos & Habits",
+    "category": "monthly",
+    "internal_id": 47
+  },
+  {
+    "name": "Wide Grid & Tasks",
+    "category": "monthly",
+    "internal_id": 58
+  }
+]
