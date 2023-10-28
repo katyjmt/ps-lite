@@ -3,39 +3,47 @@ const typeDefs = `#graphql
   _id: ID!
   first_name: String!
   last_name: String!
-  email: String!
-  designs: [Design!]
+  email: String
+  createdAt: String!
+  updatedAt: String
  }
 
  type Design {
   _id: ID!
   user: User!
-  page_selection: [Page!]
-  cover_type: String!
-  orders: [Order!]
+  start_month: String!
+  end_month: String!
+  pages: [Page]
+  cover: String!
+  createdAt: String!
+  updatedAt: String
  }
 
  type Order {
   _id: ID!
-  design: Design!
+  designs: [Design!]
   user: User!
-  pdf: String!
+  createdAt: String!
+  updatedAt: String
  }
 
  type Page {
   _id: ID!
-  category: Category!
-  title: String!
-  description: String!
-  pdf: [String!]
-  jpg: [String!]
+  category: String!
+  name: String!
+  internal_id: Int!
+  createdAt: String!
+  updatedAt: String
  }
 
- type Category {
+ type File {
   _id: ID!
-  category_name: String!
-  description: String!
-  pages: [Page!]
+  pdf: String!
+  jpg: [String!]
+  internal_id: Int!
+  createdAt: String!
+  updatedAt: String
+  page: Page!
  }
 
  type Query {
@@ -47,8 +55,20 @@ const typeDefs = `#graphql
   order(_id: ID!): Order
   pages: [Page]
   page(_id: ID!): Page
-  categories: [Category]
-  category(_id: ID!): Category
+  files: [File]
+  file(_id: ID!): File
+ }
+
+ type Mutation {
+  addUser(first_name: String!, last_name: String!, email: String!, password: String!): User
+  addOrder(user: ID!, designs: [ID!]): Order
+  # Design first added to server after user selects cover colour, start and end months
+  addDesign(user: ID!, start_month: String!, end_month: String!, cover: String!): Design
+  editDesignMonths(_id: ID!, start_month: String!, end_month: String!): Design
+  editCover(user: ID!, cover: String!): Design
+  addPageToDesign(_id: ID!, pageId: ID!): Design
+  removePageFromDesign(_id: ID!, pageId: ID!): Design
+  deleteDesign(_id: ID!): Design
  }
 `;
 
