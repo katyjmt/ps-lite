@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     font-size: 1rem;
     margin: 0;
-    color: #575757;
+    color: ${({ theme }) => theme.colors.text};
   }
 
   h1 {
@@ -22,8 +22,20 @@ const GlobalStyles = createGlobalStyle`
     margin: 0px 0px 15px 0px;
   }
 
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
   p {
-    margin: 15px 0px;
+    font-size: 14px;
+    font-weight: 300;
   }
 
   a {

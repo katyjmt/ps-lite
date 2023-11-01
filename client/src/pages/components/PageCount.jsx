@@ -1,17 +1,17 @@
 import { useState } from "react"
 
-export default function PageCount() {
+import { PageCountStyled } from "./styles/PageCount.styled";
+
+export function PageCount() {
 
   const [count, setCount] = useState(0);
 
   // TO DO: Add function to count pages based on session storage
 
   return (
-    <>
-      <div className="page-count-container">
-        <p className="med-text"><span className="page-count">{___}</span> / 250</p>
-        <p>pages used.</p>
-      </div>
-    </>
+    <PageCountStyled>
+      <h2><span>100</span> / 250</h2>
+      <p>pages used.</p>
+    </PageCountStyled>
   )
 }

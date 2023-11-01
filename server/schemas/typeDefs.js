@@ -4,15 +4,21 @@ const typeDefs = `#graphql
   first_name: String!
   last_name: String!
   email: String
+  designs: [Design]
+  orders: [Order]
   createdAt: String!
   updatedAt: String
  }
 
+ type Auth {
+  token: ID!
+  user: User
+ }
+
  type Design {
   _id: ID!
-  user: User!
-  start_month: String!
-  end_month: String!
+  user_email: String
+  design_name: String!
   pages: [Page]
   cover: String!
   createdAt: String!
@@ -21,16 +27,25 @@ const typeDefs = `#graphql
 
  type Order {
   _id: ID!
+  user_email: String
   designs: [Design!]
-  user: User!
+  createdAt: String!
+  updatedAt: String
+ }
+
+ type Category {
+  _id: ID!
+  category_name: String!
+  pages: [Page]
   createdAt: String!
   updatedAt: String
  }
 
  type Page {
   _id: ID!
-  category: String!
+  category: String
   name: String!
+  files: [File]
   internal_id: Int!
   createdAt: String!
   updatedAt: String
@@ -40,10 +55,12 @@ const typeDefs = `#graphql
   _id: ID!
   pdf: String!
   jpg: [String!]
+  month: Int
+  year: Int
+  isoYearWeek: Int
   internal_id: Int!
   createdAt: String!
   updatedAt: String
-  page: Page!
  }
 
  type Query {
@@ -53,14 +70,17 @@ const typeDefs = `#graphql
   design(_id: ID!): Design
   orders: [Order]
   order(_id: ID!): Order
+  categories: [Category]
+  category(category_name: String!): Category
   pages: [Page]
   page(_id: ID!): Page
-  files: [File]
+  files(page_name: String!): [File]
   file(_id: ID!): File
  }
 
  type Mutation {
-  addUser(first_name: String!, last_name: String!, email: String!, password: String!): User
+  addUser(first_name: String!, last_name: String!, email: String!, password: String!): Auth
+  login(email: String!, password: String!): Auth
   addOrder(user: ID!, designs: [ID!]): Order
   # Design first added to server after user selects cover colour, start and end months
   addDesign(user: ID!, start_month: String!, end_month: String!, cover: String!): Design

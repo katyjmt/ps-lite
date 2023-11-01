@@ -8,5 +8,5 @@ export const Container = styled.div`
   flex-direction: ${( { fd }) => fd || 'column'};
   justify-content: ${( { justify }) => justify || 'center'};
   align-items: center;
-  height: ${( { vh }) => vh || 'auto'};
+  height: ${( { h }) => h || 'auto'};
 `

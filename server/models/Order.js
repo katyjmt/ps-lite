@@ -1,9 +1,8 @@
 const { Schema, model } = require('mongoose');
 
 const orderSchema = new Schema({
-  user: {
-    type: Schema.Types.ObjectId, 
-    ref: 'User'
+  user_email: {
+    type: String
   },
   designs: [{
     type: Schema.Types.ObjectId, 

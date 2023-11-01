@@ -1,16 +1,16 @@
 import { StyledNextBackButtons } from "./styles/Button.styled"
 
-export function NextBackButtons({ currentPage, handlePageChange }) {
+export function NextBackButtons({ previousPage, nextPage, handlePageChange }) {
   return (
     <>
       <StyledNextBackButtons >
         <a 
-          onClick={() => handlePageChange('Home')}
+          onClick={() => handlePageChange(previousPage)}
         >
           Back
         </a>
         <a 
-          onClick={() => handlePageChange('Login')}
+          onClick={() => handlePageChange(nextPage)}
         >
           Next
         </a>

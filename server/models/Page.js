@@ -8,6 +8,10 @@ const pageSchema = new Schema({
     type: String,
     required: true,
   },
+  files: [{
+    type: Schema.Types.ObjectId, 
+    ref: 'File'
+  }],
   internal_id: {
     type: Number,
     required: true,

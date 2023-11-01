@@ -1,24 +1,31 @@
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './pages/components/Global'
 import './utils/dateLogic'
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
 import { Container } from './pages/components/styles/Container.styled'
 import { Header } from './pages/components/Header'
 import { theme } from './pages/components/styles/Theme.styled';
 
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
 
 function App() {
 
   return (
-    <ThemeProvider theme = {theme}>
-      <>
-        <GlobalStyles />
-        <Header />
-        <Container vh = "60vh">
-          <Outlet />
-        </Container>
-      </>
-    </ThemeProvider>
+    <ApolloProvider client={client}>
+      <ThemeProvider theme = {theme}>
+        <>
+          <GlobalStyles />
+          <Header />
+          <Container>
+            <Outlet />
+          </Container>
+        </>
+      </ThemeProvider>
+    </ApolloProvider>
   )
 }
 

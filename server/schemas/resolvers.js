@@ -1,4 +1,5 @@
-const { User, Design, Order, Page, File } = require('../models');
+const { User, Design, Order, Category, Page, File } = require('../models');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
@@ -17,10 +18,16 @@ const resolvers = {
     orders: async () => {
       return await Order.find({});
     },
-    order: async (parent, args) => {
+    order: async (_parent, args) => {
       return await Order.findById(args._id);
     },
-    pages: async () => {
+    categories: async (_parent, args) => {
+      return await Category.find({});
+    },
+    category: async (_parent, args) => {
+      return await Category.findOne({ category_name: args.category_name });
+    },
+    pages: async (_parent, args) => {
       return await Page.find({});
     },
     page: async (parent, args) => {
@@ -34,38 +41,70 @@ const resolvers = {
     },
   },
 
-  Design: {
-    user: async (parent) => {
-      const res = await Design.findById(parent._id).populate("user");
-      return res.user;
-    },
-    pages: async (parent) => {
-      const res = await Design.findById(parent._id).populate("pages");
-      return res.pages;
-    }
-  },
-
-  Order: {
-    user: async (parent) => {
-      const res = await Order.findById(parent._id).populate("user");
-      return res.user;
-    },
+  User: {
     designs: async (parent) => {
-      const res = await Order.findById(parent._id).populate("designs");
+      const res = await User.findById(parent._id)
+      .populate("designs")
+      .populate({
+        path: 'designs',
+        populate: {
+          path: 'pages',
+          populate: {
+            path: 'files',
+          },
+        }
+      });
       return res.designs;
+    },
+    orders: async (parent) => {
+      await User.findById(parent._id)
+      .populate("orders")
+      return res.orders;
     }
   },
 
-  File: {
-    page: async (parent) => {
-      const res = await File.findById(parent._id).populate("page");
-      return res.page;
+  Category: {
+    pages: async (parent) => {
+      const res = await Category.findOne({ category_name: parent.category_name })
+      .populate("pages")
+      .populate({
+        path: 'pages',
+        populate: 'files',
+      })
+      return res.pages;
+    },
+  },
+
+  Page: {
+    files: async (parent) => {
+      const res = await Page.findById(parent._id)
+      .populate("files")
+      return res.files;
     },
   },
 
   Mutation: {
-    addUser: async (_parent, {first_name, last_name, email, password}) => {
-      return await User.create({first_name, last_name, email, password});
+    addUser: async (_parent, { first_name, last_name, email, password }) => {
+      const user = await User.create({ first_name, last_name, email, password });
+      const token = signToken(user);
+      return { token, user };
+    },
+    login: async (_parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw AuthenticationError;
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw AuthenticationError;
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
     },
     addOrder: async (_parent, {user, designs}) => {
       return await Order.create({user, designs});
@@ -78,7 +117,6 @@ const resolvers = {
         { _id }, 
         { start_month },
         { end_month },
-        // Return the newly updated object instead of the original
         { new: true }
       );
     },

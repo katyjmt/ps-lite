@@ -1,102 +1,82 @@
 [
   {
-    "start_month": "2023-01-01",
-    "end_month": "2023-03-01",
+    "design_name": "AutumnGrove",
     "cover": "red"
   },
   {
-    "start_month": "2023-04-01",
-    "end_month": "2023-06-01",
-    "cover": "blue"
-  },
-  {
-    "start_month": "2023-07-01",
-    "end_month": "2023-09-01",
-    "cover": "green"
-  },
-  {
-    "start_month": "2023-10-01",
-    "end_month": "2024-01-01",
+    "design_name": "SunnySapphire",
     "cover": "yellow"
   },
   {
-    "start_month": "2024-02-01",
-    "end_month": "2024-05-01",
-    "cover": "orange"
+    "design_name": "EmeraldWave",
+    "cover": "green"
   },
   {
-    "start_month": "2024-06-01",
-    "end_month": "2024-09-01",
-    "cover": "purple"
+    "design_name": "BlueSkies",
+    "cover": "blue"
   },
   {
-    "start_month": "2024-10-01",
-    "end_month": "2025-02-01",
-    "cover": "pink"
-  },
-  {
-    "start_month": "2025-03-01",
-    "end_month": "2025-07-01",
-    "cover": "brown"
-  },
-  {
-    "start_month": "2025-08-01",
-    "end_month": "2025-12-01",
-    "cover": "gray"
-  },
-  {
-    "start_month": "2023-01-01",
-    "end_month": "2023-04-01",
+    "design_name": "MidnightRider",
     "cover": "black"
   },
   {
-    "start_month": "2023-05-01",
-    "end_month": "2023-08-01",
-    "cover": "white"
+    "design_name": "CherryBlossom",
+    "cover": "red"
   },
   {
-    "start_month": "2023-09-01",
-    "end_month": "2024-01-01",
-    "cover": "teal"
+    "design_name": "GoldenHarvest",
+    "cover": "yellow"
   },
   {
-    "start_month": "2024-02-01",
-    "end_month": "2024-06-01",
-    "cover": "cyan"
+    "design_name": "ForestWhisper",
+    "cover": "green"
   },
   {
-    "start_month": "2024-07-01",
-    "end_month": "2024-12-01",
-    "cover": "magenta"
+    "design_name": "OceanDream",
+    "cover": "blue"
   },
   {
-    "start_month": "2025-01-01",
-    "end_month": "2025-05-01",
-    "cover": "lime"
+    "design_name": "DarkKnight",
+    "cover": "black"
   },
   {
-    "start_month": "2025-06-01",
-    "end_month": "2025-12-01",
-    "cover": "indigo"
+    "design_name": "RubySunset",
+    "cover": "red"
   },
   {
-    "start_month": "2023-01-01",
-    "end_month": "2023-05-01",
-    "cover": "violet"
+    "design_name": "LemonZest",
+    "cover": "yellow"
   },
   {
-    "start_month": "2023-06-01",
-    "end_month": "2023-12-01",
-    "cover": "gold"
+    "design_name": "MeadowSong",
+    "cover": "green"
   },
   {
-    "start_month": "2024-01-01",
-    "end_month": "2024-07-01",
-    "cover": "silver"
+    "design_name": "TurquoiseTide",
+    "cover": "blue"
   },
   {
-    "start_month": "2024-08-01",
-    "end_month": "2025-02-01",
-    "cover": "bronze"
+    "design_name": "BlackMagic",
+    "cover": "black"
+  },
+  {
+    "design_name": "ScarletFire",
+    "cover": "red"
+  },
+  {
+    "design_name": "AmberBliss",
+    "cover": "yellow"
+  },
+  {
+    "design_name": "EnchantedWood",
+    "cover": "green"
+  },
+  {
+    "design_name": "CeruleanDream",
+    "cover": "blue"
+  },
+  {
+    "design_name": "EbonShadows",
+    "cover": "black"
   }
 ]

@@ -1,32 +1,122 @@
 [
   {
-    "pdf": "../../pages/3-2023-1.pdf",
-    "jpg": ["../../pages/3-2023-1/3-2023-1-1.jpg", "../../pages/3-2023-1/3-2023-1-2.jpg"],
-    "internal_id": 3
+    "pdf": "./pages/3-2023-1.pdf",
+    "jpg": ["./pages/3-2023-1/3-2023-1-1.jpg", "./pages/3-2023-1/3-2023-1-2.jpg"],
+    "internal_id": 3,
+    "month": 1,
+    "year": 2023,
+    "isoYearWeek": ""
   },
   {
-    "pdf": "../../pages/3-2023-2.pdf",
-    "jpg": ["../../pages/3-2023-2/3-2023-2-1.jpg", "../../pages/3-2023-2/3-2023-2-2.jpg"],
-    "internal_id": 3
+    "pdf": "./pages/3-2023-2.pdf",
+    "jpg": ["./pages/3-2023-2/3-2023-2-1.jpg", "./pages/3-2023-2/3-2023-2-2.jpg"],
+    "internal_id": 3,
+    "month": 2,
+    "year": 2023,
+    "isoYearWeek": ""
   },
   {
-    "pdf": "../../pages/3-2023-3.pdf",
-    "jpg": ["../../pages/3-2023-3/3-2023-3-1.jpg", "../../pages/3-2023-3/3-2023-3-2.jpg"],
-    "internal_id": 3
+    "pdf": "./pages/3-2023-3.pdf",
+    "jpg": ["./pages/3-2023-3/3-2023-3-1.jpg", "./pages/3-2023-3/3-2023-3-2.jpg"],
+    "internal_id": 3,
+    "month": 3,
+    "year": 2023,
+    "isoYearWeek": ""
   },
   {
-    "pdf": "../../pages/4-2023-1.pdf",
-    "jpg": ["../../pages/4-2023-1/4-2023-1-1.jpg", "../../pages/4-2023-1/4-2023-1-2.jpg"],
-    "internal_id": 4
+    "pdf": "./pages/4-2023-1.pdf",
+    "jpg": ["./pages/4-2023-1/4-2023-1-1.jpg", "./pages/4-2023-1/4-2023-1-2.jpg"],
+    "internal_id": 4,
+    "month": 1,
+    "year": 2023,
+    "isoYearWeek": ""
   },
   {
-    "pdf": "../../pages/4-2023-2.pdf",
-    "jpg": ["../../pages/4-2023-2/4-2023-2-1.jpg", "../../pages/4-2023-2/4-2023-2-2.jpg"],
-    "internal_id": 4
+    "pdf": "./pages/4-2023-2.pdf",
+    "jpg": ["./pages/4-2023-2/4-2023-2-1.jpg", "./pages/4-2023-2/4-2023-2-2.jpg"],
+    "internal_id": 4,
+    "month": 2,
+    "year": 2023,
+    "isoYearWeek": ""
   },
   {
-    "pdf": "../../pages/4-2023-3.pdf",
-    "jpg": ["../../pages/4-2023-3/4-2023-3-1.jpg", "../../pages/4-2023-3/4-2023-3-2.jpg"],
-    "internal_id": 4
+    "pdf": "./pages/4-2023-3.pdf",
+    "jpg": ["./pages/4-2023-3/4-2023-3-1.jpg", "./pages/4-2023-3/4-2023-3-2.jpg"],
+    "internal_id": 4,
+    "month": 3,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/34-2023-1.pdf",
+    "jpg": ["./pages/34-2023-1/34-2023-1-1.jpg", "./pages/34-2023-1/34-2023-1-2.jpg"],
+    "internal_id": 34,
+    "month": 1,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/34-2023-2.pdf",
+    "jpg": ["./pages/34-2023-2/34-2023-2-1.jpg", "./pages/34-2023-2/34-2023-2-2.jpg"],
+    "internal_id": 34,
+    "month": 2,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/34-2023-3.pdf",
+    "jpg": ["./pages/34-2023-3/34-2023-3-1.jpg", "./pages/34-2023-3/34-2023-3-2.jpg"],
+    "internal_id": 34,
+    "month": 3,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/47-2023-1.pdf",
+    "jpg": ["./pages/47-2023-1/47-2023-1-1.jpg", "./pages/47-2023-1/47-2023-1-2.jpg"],
+    "internal_id": 47,
+    "month": 1,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/47-2023-2.pdf",
+    "jpg": ["./pages/47-2023-2/47-2023-2-1.jpg", "./pages/47-2023-2/47-2023-2-2.jpg"],
+    "internal_id": 47,
+    "month": 2,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/47-2023-3.pdf",
+    "jpg": ["./pages/47-2023-3/47-2023-3-1.jpg", "./pages/47-2023-3/47-2023-3-2.jpg"],
+    "internal_id": 47,
+    "month": 3,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/58-2023-1.pdf",
+    "jpg": ["./pages/58-2023-1/58-2023-1-1.jpg", "./pages/58-2023-1/58-2023-1-2.jpg"],
+    "internal_id": 58,
+    "month": 1,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/58-2023-2.pdf",
+    "jpg": ["./pages/58-2023-2/58-2023-2-1.jpg", "./pages/58-2023-2/58-2023-2-2.jpg"],
+    "internal_id": 58,
+    "month": 2,
+    "year": 2023,
+    "isoYearWeek": ""
+  },
+  {
+    "pdf": "./pages/58-2023-3.pdf",
+    "jpg": ["./pages/58-2023-3/58-2023-3-1.jpg", "./pages/58-2023-3/58-2023-3-2.jpg"],
+    "internal_id": 58,
+    "month": 3,
+    "year": 2023,
+    "isoYearWeek": ""
   }
 ]
