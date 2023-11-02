@@ -44,6 +44,7 @@ export function SignupPage() {
     <StyledSignupLogin>
       <div>
         <h1>Sign Up</h1>
+        <p>Sign up to create a customised planner</p>
         <div>
           {data ? (
             <p>

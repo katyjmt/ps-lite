@@ -4,6 +4,10 @@ export const StyledSignupLogin = styled.div`
   display: flex;
   margin-top: 50px;
 
+  p {
+    margin-bottom: 20px;
+  }
+  
   form {
     display: flex;
     flex-direction: column;
