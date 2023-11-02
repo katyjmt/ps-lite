@@ -21,6 +21,8 @@ export function DailyPages({
   return (
     <>
       <StyledPageSelector>
+      <h2>Step 3: Select page layouts</h2>
+      <div>Select your preferred daily layout from the options below.</div>
         <PageViewer
           categoryData={categoryData}
           pgId="6541db4e2eb0022c42376f58"

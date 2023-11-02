@@ -5,8 +5,8 @@ import { Container } from "./styles/Container.styled"
 export function Header() {
   return (
     <StyledHeader>
-      <Container justify = "center"  h = "130px">
-        <Logo src="./logo.svg" alt="PLANNER.STUDIO Logo" />
+      <Container justify = "center"  h = "100px">
+        <Logo src="./logo.svg" alt="PLANNER.STUDIO Logo"/>
       </Container>
     </StyledHeader>
   )

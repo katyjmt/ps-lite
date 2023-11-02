@@ -4,6 +4,9 @@ import { useQuery } from "@apollo/client";
 
 import { QUERY_SINGLE_PAGE } from '../../utils/queries';
 
+import { useState, useEffect } from 'react';
+
+
 // Cards for each page option
 function PageOptionCards({ categoryData, pageIdsSelected, handlePageIdsSelected }) {
 
@@ -57,7 +60,15 @@ export function PageViewer({handlePageIdsSelected, pageIdsSelected, categoryData
   const { loading, data } = useQuery(QUERY_SINGLE_PAGE,
     {variables: { id: pgId }});
 
-  const pageImages = data?.page.files[0].jpg || [];
+  const [pageImages, setPageImages] = useState(data?.page.files[0].jpg || []);
+
+  // const pageImages = data?.page.files[0].jpg || [];
+
+  useEffect(() => {
+    if (!loading) {
+      setPageImages(data?.page.files[0].jpg || []);
+    }
+  }, [data, loading]);
 
   if (loading) {
     return <div>Loading...</div>
@@ -67,19 +78,8 @@ export function PageViewer({handlePageIdsSelected, pageIdsSelected, categoryData
     <>
       <PageContainer>
         <PageDisplay images={pageImages}/>
-        <PageOptionCards categoryData={categoryData} pageIdsSelected={pageIdsSelected} handlePageIdsSelected={handlePageIdsSelected}/>
+        <PageOptionCards categoryData={categoryData} pageIdsSelected={pageIdsSelected} handlePageIdsSelected={handlePageIdsSelected} updatePageImages={(newImages) => setPageImages(newImages)}/>
       </PageContainer>
-      <button>Select Layout</button>
-      {/* <div>
-        <h2>Selected Page Type:</h2>
-        <ul>
-          {pageIdsSelected.map((pageId) => (
-            <li key={pageId.catName}>
-              CatName: {pageId.catName}, Id:{pageId.selectedId}
-            </li>
-          ))}
-        </ul>
-      </div> */}
     </>
   )
 }

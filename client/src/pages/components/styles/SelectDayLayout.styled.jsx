@@ -6,6 +6,7 @@ display: flex;
 justify-content: center;
 width: 100%;
 align-items: center;
+margin: 30px 0px 0px 0px;
 
   div {
     border: 1px solid ${({ theme }) => theme.colors.text};

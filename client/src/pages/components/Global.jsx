@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0px 0px 15px 0px;
@@ -24,7 +24,8 @@ const GlobalStyles = createGlobalStyle`
 
   h2 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
+    padding-bottom: 20px;
   }
 
   h3 {
@@ -41,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.colors.text};
   }
+
 `;
 
 export default GlobalStyles

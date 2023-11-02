@@ -4,8 +4,10 @@ import { MonthSelector } from './components/MonthSelector';
 import { PDFDownload } from './components/PDFDownload';
 import { DailyPages } from './components/DailyPages';
 import { MonthlyPages } from './components/MonthlyPages';
+import { redirect } from 'react-router-dom';
 
 export function CreatePage() {
+
   // State for page displayed within Create container 
   const [currentPage, setCurrentPage] = useState('SelectDayLayout');
 
@@ -55,6 +57,7 @@ export function CreatePage() {
   };
 
 
+
   // Method checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage === 'SelectDayLayout') {
@@ -92,6 +95,9 @@ export function CreatePage() {
     }
     if (currentPage === 'DownloadPDF') {
       return <PDFDownload />;
+    }
+    if (currentPage === 'Home') {
+      redirect('/');
     }
   };
 

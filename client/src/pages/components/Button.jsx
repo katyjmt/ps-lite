@@ -6,11 +6,13 @@ export function NextBackButtons({ previousPage, nextPage, handlePageChange }) {
       <StyledNextBackButtons >
         <a 
           onClick={() => handlePageChange(previousPage)}
+          className="back"
         >
           Back
         </a>
         <a 
           onClick={() => handlePageChange(nextPage)}
+          className="next"
         >
           Next
         </a>

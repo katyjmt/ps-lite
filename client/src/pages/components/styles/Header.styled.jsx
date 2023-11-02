@@ -7,6 +7,6 @@ export const StyledHeader = styled.header`
 `
 
 export const Logo = styled.img`
-  width: 170px;
+  width: 150px;
   height: auto;
 `

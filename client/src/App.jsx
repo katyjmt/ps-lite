@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom';
 import { Container } from './pages/components/styles/Container.styled'
 import { Header } from './pages/components/Header'
 import { theme } from './pages/components/styles/Theme.styled';
+import './App.css';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -20,7 +21,7 @@ function App() {
         <>
           <GlobalStyles />
           <Header />
-          <Container>
+          <Container mt="30px">
             <Outlet />
           </Container>
         </>

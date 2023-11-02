@@ -33,6 +33,8 @@ export function MonthSelector({
 }) {
   return (
     <>
+      <h2>Step 2: Select date range</h2>
+      <div>Please choose a start and end month for your planner.</div>
       <StyledMonthSelector>
         <select
           id="start-month-dropdown"
@@ -64,13 +66,13 @@ export function MonthSelector({
         </select>
       </StyledMonthSelector>
       <NextBackButtons previousPage="SelectDayLayout" nextPage="DailyPages" handlePageChange={handlePageChange}/>
-      <div>
+      {/* <div>
         <h2>Selected Months:</h2>
         <ul>
           <li key={startDateArrIndex}>{startDateArrIndex}</li>
           <li key={endDateArrIndex}>{endDateArrIndex}</li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 }

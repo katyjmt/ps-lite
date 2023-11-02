@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { StyledSignupLogin } from './components/styles/SignupLogin.styled';
 
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
@@ -40,9 +41,9 @@ export function SignupPage() {
   };
 
   return (
-    <div>
+    <StyledSignupLogin>
       <div>
-        <h4>Sign Up</h4>
+        <h1>Sign Up</h1>
         <div>
           {data ? (
             <p>
@@ -94,6 +95,6 @@ export function SignupPage() {
           )}
         </div>
       </div>
-    </div>
+    </StyledSignupLogin>
   );
 }
