@@ -1,14 +1,27 @@
 [
   {
-    "category_name": "daily"
+    "category_name": "daily",
+    "type": "dateView",
+    "app_order": 0.04
   },
   {
-    "category_name": "weekly"
+    "category_name": "weekly",
+    "type": "dateView",
+    "app_order": 0.03
   },
   {
-    "category_name": "monthly"
+    "category_name": "monthly",
+    "type": "dateView",
+    "app_order": 0.02
   },
   {
-    "category_name": "annual"
+    "category_name": "annual",
+    "type": "dateView",
+    "app_order": 0.01
+  },
+  {
+    "category_name": "notes",
+    "type": "misc",
+    "app_order": 0.9
   }
 ]

@@ -8,7 +8,16 @@ const categorySchema = new Schema({
   pages: [{
     type: Schema.Types.ObjectId, 
     ref: 'Page'
-  }]
+  }],
+  type: {
+    type: String,
+    required: true,
+  },
+  app_order: {
+    type: Number,
+    required: true,
+    unique: true,
+  }
 }, 
 { timestamps: true }
 );

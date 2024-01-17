@@ -13,7 +13,7 @@ const pageSchema = new Schema({
     ref: 'File'
   }],
   internal_id: {
-    type: Number,
+    type: String,
     required: true,
     unique: true,
   }

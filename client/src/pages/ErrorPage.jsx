@@ -1,9 +1,9 @@
-import GlobalStyles from './components/Global'
+import GlobalStyles from '../components/Global'
 import { Link } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components'
-import { theme } from './components/styles/Theme.styled';
-import { Header } from './components/Header';
-import { Container } from './components/styles/Container.styled';
+import { theme } from '../components/styles/Theme.styled';
+import { Header } from '../components/Header';
+import { Container } from '../components/styles/Container.styled';
 import '../App.css'
 
 export function ErrorPage() {

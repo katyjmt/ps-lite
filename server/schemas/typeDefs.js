@@ -4,8 +4,8 @@ const typeDefs = `#graphql
   first_name: String!
   last_name: String!
   email: String
-  designs: [Design]
-  orders: [Order]
+  designs: [Design!]
+  orders: [Order!]
   createdAt: String!
   updatedAt: String
  }
@@ -19,7 +19,7 @@ const typeDefs = `#graphql
   _id: ID!
   user_email: String
   design_name: String!
-  pages: [Page]
+  pages: [Page!]
   cover: String!
   createdAt: String!
   updatedAt: String
@@ -27,8 +27,10 @@ const typeDefs = `#graphql
 
  type Order {
   _id: ID!
-  user_email: String
-  designs: [Design!]
+  # user_email: String
+  # designs: [Design!]
+  pdfArray: [String]
+  pdf: String
   createdAt: String!
   updatedAt: String
  }
@@ -36,7 +38,9 @@ const typeDefs = `#graphql
  type Category {
   _id: ID!
   category_name: String!
-  pages: [Page]
+  type: String!
+  app_order: Float!
+  pages: [Page!]
   createdAt: String!
   updatedAt: String
  }
@@ -45,18 +49,23 @@ const typeDefs = `#graphql
   _id: ID!
   category: String
   name: String!
-  files: [File]
+  files: [File!]
   internal_id: Int!
   createdAt: String!
   updatedAt: String
  }
 
+  type PageWithFiles {
+  page: Page!
+  files: [File!]
+  }
+
  type File {
   _id: ID!
-  pdf: String!
-  jpg: [String!]
-  month: Int
-  year: Int
+  page_id: String!
+  pdf: [String!]
+  jpg: [String]
+  yearMonthDay: Int
   isoYearWeek: Int
   internal_id: Int!
   createdAt: String!
@@ -71,16 +80,23 @@ const typeDefs = `#graphql
   orders: [Order]
   order(_id: ID!): Order
   categories: [Category]
+  categoriesByType(type: String!): [Category]
+  categoryPagesAndImages(category_name: String!, yearMonthDay: Int!): [PageWithFiles]
+  weeklyCategoryPagesAndImages(category_name: String!, isoYearWeek: Int!): [PageWithFiles]
   category(category_name: String!): Category
   pages: [Page]
   page(_id: ID!): Page
-  files(page_name: String!): [File]
+  fileData(pageIds: [String!]!, startYearMonthDay: Int, endYearMonthDay: Int ): [File]
+  weeklyFileData(pageIds: [String!]!, startIsoYearWeek: Int, endIsoYearWeek: Int ): [File]
+  fetchFilesByInternalId( internal_id: Int! ): [File]
+  files(page_id: ID!): [File]
   file(_id: ID!): File
  }
 
  type Mutation {
   addUser(first_name: String!, last_name: String!, email: String!, password: String!): Auth
   login(email: String!, password: String!): Auth
+  addPDF(pdfArray: [String!]): Order
   addOrder(user: ID!, designs: [ID!]): Order
   # Design first added to server after user selects cover colour, start and end months
   addDesign(user: ID!, start_month: String!, end_month: String!, cover: String!): Design

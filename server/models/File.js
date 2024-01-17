@@ -1,20 +1,20 @@
 const { Schema, model } = require('mongoose');
 
 const fileSchema = new Schema({
-  pdf: {
-    type: String,
-    required: true,
+  page_id: {
+    type: String
   },
-  jpg: [{
+  pdf: [{
     type: String,
     required: true,
   }],
-  month: {
+  jpg: [{
+    type: String,
+  }],
+  yearMonthDay: {
     type: Number,
   },
-  year: {
-    type: Number,
-  },
+
   // When user selects Start Month and End Month in front-end, these will provide
   // the isoWeek and isoYear each day within the period. If a weekly page layout 
   // is selected by the user, the query will fetch page files matching unique
@@ -24,7 +24,7 @@ const fileSchema = new Schema({
     type: Number,
   },
   internal_id: {
-    type: Number,
+    type: String,
     required: true,
   },
 }, 

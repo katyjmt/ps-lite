@@ -1,3 +1,8 @@
+h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
 /* Button Styling */
 
 .button {
@@ -13,6 +18,10 @@
   text-decoration: none;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 /* .back {
   background-color: #F1F9FF;
 }
@@ -21,3 +30,6 @@
   background-color: #BCE0FD;
 } */
 
+.btn-align {
+  display: flex;
+}

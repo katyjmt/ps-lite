@@ -1,11 +1,11 @@
 import { ThemeProvider } from 'styled-components'
-import GlobalStyles from './pages/components/Global'
+import GlobalStyles from './components/Global'
 import './utils/dateLogic'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
-import { Container } from './pages/components/styles/Container.styled'
-import { Header } from './pages/components/Header'
-import { theme } from './pages/components/styles/Theme.styled';
+import { Container } from './components/styles/Container.styled'
+import { Header } from './components/Header'
+import { theme } from './components/styles/Theme.styled';
 import './App.css';
 
 const client = new ApolloClient({
@@ -21,7 +21,7 @@ function App() {
         <>
           <GlobalStyles />
           <Header />
-          <Container mt="30px">
+          <Container mt="40px">
             <Outlet />
           </Container>
         </>

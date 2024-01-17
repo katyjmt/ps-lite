@@ -26,6 +26,15 @@ export const ADD_USER = gql`
 }
 `;
 
+export const CREATE_PDF = gql`
+  mutation Mutation($pdfArray: [String!]) {
+    addPDF(pdfArray: $pdfArray) {
+      pdf
+      pdfArray
+    }
+  }
+`;
+
 // export const ADD_ORDER = gql`
 //   query singleUser($id: ID!) {
 //     user(_id: $id) {

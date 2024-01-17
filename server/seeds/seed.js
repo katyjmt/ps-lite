@@ -50,6 +50,19 @@ db.once('open', async () => {
     };
   };
 
+  // for each file, search for the id of the file with a corresponding 'internal id' and add its id to page_id
+  // then can run query for file with a given page id, which also meet iso / month criteria
+  for (newFile of files) {
+    const fileInternalId = newFile.internal_id;
+    for (newPage of pages) {
+      const pageInternalId = newPage.internal_id;
+      if (fileInternalId === pageInternalId) {
+        newFile.page_id = newPage._id;
+        await newFile.save();
+      };
+    };
+  };
+
   // randomly add a user email to each design
   for (newDesign of designs) {
     const tempUser = users[Math.floor(Math.random() * users.length)];

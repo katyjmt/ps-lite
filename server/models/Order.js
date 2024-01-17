@@ -1,13 +1,19 @@
 const { Schema, model } = require('mongoose');
 
 const orderSchema = new Schema({
-  user_email: {
+  // user_email: {
+  //   type: String
+  // },
+  // designs: [{
+  //   type: Schema.Types.ObjectId, 
+  //   ref: 'Design'
+  // }],
+  pdfArray: [{
     type: String
-  },
-  designs: [{
-    type: Schema.Types.ObjectId, 
-    ref: 'Design'
-  }]
+  }],
+  pdf: {
+    type: String
+  }
 }, 
 { timestamps: true }
 );

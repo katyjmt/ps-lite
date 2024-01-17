@@ -1,32 +1,57 @@
 [
   {
-    "name": "Notes, To-Dos and Schedule",
+    "name": "Daily Notes, Tasks, Schedule",
     "category": "daily",
-    "internal_id": 3
+    "internal_id": "00003"
   },
   {
-    "name": "Full-Page Lined",
+    "name": "Daily Lined",
     "category": "daily",
-    "internal_id": 4
+    "internal_id": "00004"
   },
   {
-    "name": "Time-Blocking & Tasks",
+    "name": "Daily Schedule",
+    "category": "daily",
+    "internal_id": "00024"
+  },
+  {
+    "name": "Daily Notes, Tasks, Appointments",
+    "category": "daily",
+    "internal_id": "00060"
+  },
+  {
+    "name": "Weekly Time-Blocking & Tasks",
     "category": "weekly",
-    "internal_id": 6
+    "internal_id": "00006"
   },
   {
-    "name": "Grid, Goals & Tasks",
-    "category": "monthly",
-    "internal_id": 34
+    "name": "Weekly Goals, Habits, Tasks",
+    "category": "weekly",
+    "internal_id": "00007"
   },
   {
-    "name": "Grid, Goals, To-Dos & Habits",
-    "category": "monthly",
-    "internal_id": 47
+    "name": "Weekly Day-Blocks, Notes, Tasks",
+    "category": "weekly",
+    "internal_id": "00028"
   },
   {
-    "name": "Wide Grid & Tasks",
+    "name": "Monthly Horizontal Goals, Tasks, Habits",
     "category": "monthly",
-    "internal_id": 58
+    "internal_id": "00002"
+  },
+  {
+    "name": "Monthly Grid with Notes",
+    "category": "monthly",
+    "internal_id": "00048"
+  },
+  {
+    "name": "Monthly Grid, Goals, Tasks, Habits",
+    "category": "monthly",
+    "internal_id": "00047"
+  },
+  {
+    "name": "Monthly Wide Grid with Tasks",
+    "category": "monthly",
+    "internal_id": "00058"
   }
 ]
